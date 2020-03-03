@@ -1,0 +1,11 @@
+@media (max-width: 1200px) {
+  .welcome__bg {
+    display: none;
+  }
+
+  .welcome { width: 28.5rem; }
+
+  .welcome__body { width: 28.5rem; }
+
+  .button { width: 28.5rem; }
+}

@@ -1,0 +1,154 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Bold.ttf) format('truetype') ;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Light.ttf) format('truetype');
+  font-weight: lighter;
+}
+
+html {
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: OpenSans;
+}
+
+body {
+  background-color: #4D525D;
+  margin: 100px 0;
+}
+
+.welcome__container{
+  display: flex;
+  width: 70vw;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.welcome{
+  padding: 70px;
+  width: 35rem;
+  /* background-color: red; */
+}
+
+.welcome__subtitle {
+  font-size: .9rem;
+  text-transform: uppercase;
+  color: #4D525D;
+  letter-spacing: 1px;
+}
+
+.welcome__subtitle--not-uppercase {
+  text-transform: initial;
+}
+
+.welcome__title {
+  margin: 0;
+  margin: 20px 0;
+  font-size: 3.5rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.welcome__body {
+  margin: 0 0 60px 0;
+  width: 35rem;
+  color: rgb(212, 211, 211);
+  line-height: 2.0rem;
+}
+
+.button__group {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.button__group--column {
+  flex-direction: column;
+}
+
+.button__group--column .button { margin: 10px 0; }
+
+.button {
+  width: 35rem;
+  padding: 30px 0;
+  border: 1px solid rgb(212, 211, 211);
+  color: #4D525D;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+
+.button:hover {
+  box-shadow: 0px 10px 20px rgb(212, 211, 211);
+}
+
+.button--with-icon {
+  position: relative;
+}
+
+.button__icon {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 3rem;
+}
+
+.button__icon svg {
+  width: 24px;
+}
+
+.welcome__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.anchor__button,
+.anchor__button:visited {
+  color: black;
+  text-decoration: none;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.anchor__button--success { color: green; }
+
+.welcome__bg {
+  width: 65rem;
+  animation: slideFromLeft 0.5s ease-in;
+  background-image: url(../img/nyc.jpg);
+  background-size: cover;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(1000px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.teste {
+  display: none;
+  /* opacity: 0; */
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  animation: slideFromLeft 0.5s ease-in;
+}
