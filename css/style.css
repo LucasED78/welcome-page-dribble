@@ -127,6 +127,8 @@ body {
 
 .anchor__button--success { color: green; }
 
+.anchor__button--no-uppercase { text-transform: initial; }
+
 .welcome__bg {
   width: 65rem;
   animation: slideFromLeft 0.5s ease-in;
@@ -142,6 +144,19 @@ body {
   to {
     transform: translateX(0px);
   }
+}
+
+.credits {
+  text-align: center;
+}
+
+.credits__text {
+  color: rgb(212, 211, 211);
+}
+
+.credits__text .anchor__button {
+  font-size: 1rem;
+  color: rgb(250, 250, 250);
 }
 
 .teste {
